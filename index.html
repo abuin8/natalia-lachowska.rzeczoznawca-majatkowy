@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natalia Lachowska – Rzeczoznawca Majątkowy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Bootstrap 5 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- ===== NAWIGACJA ===== -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="brand" href="#hero">NL<span>.</span></a>
+      <nav class="main-nav" aria-label="Główna nawigacja">
+        <a href="#hero" data-i18n="navHome">Start</a>
+        <a href="#o-mnie" data-i18n="navAbout">O mnie</a>
+        <a href="#uslugi" data-i18n="navServices">Usługi</a>
+        <a href="#cena" data-i18n="navPricing">Cennik</a>
+        <a href="#kontakt" data-i18n="navContact">Kontakt</a>
+      </nav>
+      <div class="language-switcher" aria-label="Wybór języka">
+        <button type="button" class="language-button active" data-language="pl">PL</button>
+        <span>/</span>
+        <button type="button" class="language-button" data-language="en">EN</button>
+      </div>
+      <a href="#kontakt" class="nav-cta" data-i18n="navCta">Zapytaj o wycenę</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-overlay">
+      <div class="container hero-content text-center text-white">
+        <p class="hero-kicker" data-i18n="heroKicker">RZECZOZNAWCA MAJĄTKOWY &nbsp;·&nbsp; WOJEWÓDZTWO POMORSKIE</p>
+        <img
+          src="natalia-lachowska.png"
+          alt="Zdjęcie Natalii Lachowskiej"
+          class="hero-avatar"
+        />
+        <h1 class="display-4 fw-bold mt-3">Natalia Lachowska</h1>
+        <p class="lead mb-1" data-i18n="heroLead">Profesjonalna wycena nieruchomości</p>
+        <p class="mb-4 text-light opacity-75" data-i18n="heroLicense">Uprawnienia zawodowe nr &nbsp;<strong>8068</strong> &nbsp;nadane przez Ministra Rozwoju i Technologii</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O MNIE ===== -->
+  <section id="o-mnie" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge bg-warning text-dark mb-2" data-i18n="aboutLabel">O mnie</span>
+          <h2 class="fw-bold mb-3" data-i18n="aboutTitle">Rzetelna wycena nieruchomości</h2>
+          <p class="text-muted" data-i18n="aboutText1"></p>
+          <p class="text-muted" data-i18n="aboutText2"></p>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="fa-solid fa-check-circle text-warning me-2"></i><span data-i18n="qualification1"></span></li>
+            <li class="mb-2"><i class="fa-solid fa-check-circle text-warning me-2"></i><span data-i18n="qualification2"></span></li>
+            <li class="mb-2"><i class="fa-solid fa-check-circle text-warning me-2"></i><span data-i18n="qualification3"></span></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&h=650&fit=crop"
+            alt="Jasny dom jednorodzinny otoczony zielenią"
+            class="img-fluid rounded-3 shadow"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== USŁUGI ===== -->
+  <section id="uslugi" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-warning text-dark mb-2" data-i18n="servicesLabel">Usługi</span>
+        <h2 class="fw-bold" data-i18n="servicesTitle">Zakres wycen</h2>
+        <p class="text-muted" data-i18n="servicesIntro">Sporządzam operaty szacunkowe dla różnych celów i typów nieruchomości</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3 p-md-4">
+            <i class="fa-solid fa-house fa-2x text-warning mb-3"></i>
+            <h5 class="fw-bold" data-i18n="service1Title">Nieruchomości mieszkalne</h5>
+            <p class="text-muted small" data-i18n="service1Text">Domy, mieszkania, lokale użytkowe – wyceny na potrzeby kredytu, sprzedaży, darowizny, podziału majątku.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3 p-md-4">
+            <i class="fa-solid fa-building fa-2x text-warning mb-3"></i>
+            <h5 class="fw-bold" data-i18n="service2Title">Nieruchomości komercyjne</h5>
+            <p class="text-muted small" data-i18n="service2Text">Biura, obiekty handlowe, hotele, nieruchomości przemysłowe i magazynowe.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3 p-md-4">
+            <i class="fa-solid fa-tree fa-2x text-warning mb-3"></i>
+            <h5 class="fw-bold" data-i18n="service3Title">Grunty i działki</h5>
+            <p class="text-muted small" data-i18n="service3Text">Grunty rolne, budowlane, leśne. Wyceny na potrzeby odszkodowań, wywłaszczeń i scalania gruntów.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3 p-md-4">
+            <i class="fa-solid fa-landmark fa-2x text-warning mb-3"></i>
+            <h5 class="fw-bold" data-i18n="service5Title">Mienie komunalne</h5>
+            <p class="text-muted small" data-i18n="service5Text">Wyceny mienia publicznego dla gmin, powiatów i Skarbu Państwa.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-3 p-md-4">
+            <i class="fa-solid fa-chart-line fa-2x text-warning mb-3"></i>
+            <h5 class="fw-bold" data-i18n="service6Title">Aktualizacja opłat</h5>
+            <p class="text-muted small" data-i18n="service6Text">Aktualizacja opłat z tytułu użytkowania wieczystego, wyceny dla celów podatkowych.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CENA ===== -->
+  <section id="cena" class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-9">
+          <span class="badge bg-warning text-dark mb-2" data-i18n="pricingLabel">Wycena usługi</span>
+          <h2 class="fw-bold mb-3" data-i18n="pricingTitle">Indywidualna oferta, jasne zasady</h2>
+          <p class="text-muted mb-0" data-i18n="pricingText">Koszt przygotowania operatu szacunkowego ustalam indywidualnie dla każdego zlecenia. Cena zależy od rodzaju nieruchomości, stopnia skomplikowania jej stanu prawnego i technicznego, nakładu pracy oraz celu wyceny. Przed rozpoczęciem współpracy zawsze przedstawiam jasną i wiążącą ofertę.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WARTOŚCI ===== -->
+  <section id="wartosci" class="py-5 values-section">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-7">
+          <span class="section-kicker" data-i18n="valuesLabel">DLACZEGO WARTO</span>
+          <h2 class="fw-bold mb-0" data-i18n="valuesTitle">Wiedza, rzetelność i indywidualne podejście</h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="text-muted mb-0" data-i18n="valuesIntro">Każdą wycenę przygotowuję z dbałością o szczegóły, jasną komunikację i potrzeby konkretnego klienta.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="value-item"><span>01</span><i class="fa-solid fa-graduation-cap"></i><h5 data-i18n="value1Title">Ekspercka wiedza</h5><p data-i18n="value1Text">Wykształcenie techniczne i specjalistyczne przygotowanie w zakresie wyceny nieruchomości.</p></div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="value-item"><span>02</span><i class="fa-solid fa-shield-halved"></i><h5 data-i18n="value2Title">Rzetelność</h5><p data-i18n="value2Text">Przejrzyste zasady współpracy i odpowiedzialność zawodowa.</p></div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="value-item"><span>03</span><i class="fa-solid fa-clock"></i><h5 data-i18n="value3Title">Terminowość</h5><p data-i18n="value3Text">Sprawna realizacja zleceń i stały kontakt na każdym etapie.</p></div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="value-item"><span>04</span><i class="fa-solid fa-handshake"></i><h5 data-i18n="value4Title">Zaufanie</h5><p data-i18n="value4Text">Indywidualne podejście do klientów indywidualnych i firm.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="kontakt" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-warning text-dark mb-2" data-i18n="contactLabel">Kontakt</span>
+        <h2 class="fw-bold" data-i18n="contactTitle">Skontaktuj się ze mną</h2>
+        <p class="text-muted" data-i18n="contactIntro">Zapraszam do współpracy na terenie województwa pomorskiego i województw ościennych.</p>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="fa-solid fa-phone fa-2x text-warning mb-3"></i>
+            <h6 class="fw-bold text-uppercase text-muted small" data-i18n="phoneLabel">Telefon</h6>
+            <a href="tel:+48606985006" class="text-dark text-decoration-none fs-5 fw-bold">606 985 006</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="fa-solid fa-envelope fa-2x text-warning mb-3"></i>
+            <h6 class="fw-bold text-uppercase text-muted small" data-i18n="emailLabel">E-mail</h6>
+            <a href="mailto:nlachowska.rzeczoznawca@outlook.com" class="text-dark text-decoration-none fs-6 fw-bold">nlachowska.rzeczoznawca@outlook.com</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="fa-solid fa-location-dot fa-2x text-warning mb-3"></i>
+            <h6 class="fw-bold text-uppercase text-muted small" data-i18n="areaLabel">Obszar działania</h6>
+            <p class="text-dark fw-bold mb-0" data-i18n="areaText">Województwo pomorskie<br/>i województwa sąsiednie</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="fa-solid fa-clock fa-2x text-warning mb-3"></i>
+            <h6 class="fw-bold text-uppercase text-muted small" data-i18n="hoursLabel">Godziny pracy</h6>
+            <p class="text-dark fw-bold mb-0" data-i18n="hoursText">Poniedziałek – piątek<br/>9:00 – 17:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a
+          href="https://www.google.com/maps/search/?api=1&amp;query=Natalia+Lachowska+rzeczoznawca+majatkowy"
+          class="btn btn-outline-dark"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="googleReviews"
+        >Zobacz wizytówkę i opinie w Google Maps</a>
+      </div>
+
+      <!-- Formularz kontaktowy -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-7">
+          <div class="card border-0 shadow p-4 p-lg-5">
+            <h5 class="fw-bold mb-4" data-i18n="formTitle">Wyślij wiadomość</h5>
+            <form>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label small fw-bold" data-i18n="nameLabel">Imię i nazwisko</label>
+                  <input type="text" class="form-control" data-i18n-placeholder="namePlaceholder" placeholder="Imię i nazwisko" required />
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label small fw-bold" data-i18n="phoneLabel">Telefon</label>
+                  <input type="tel" class="form-control" placeholder="+48 ..." />
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold" data-i18n="emailAddressLabel">Adres e-mail</label>
+                  <input type="email" class="form-control" data-i18n-placeholder="emailPlaceholder" placeholder="twoj@email.pl" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold" data-i18n="messageLabel">Wiadomość</label>
+                  <textarea class="form-control" rows="4" data-i18n-placeholder="messagePlaceholder" placeholder="Opisz krótko, czego dotyczy wycena..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-warning fw-bold px-5" data-i18n="formButton">Wyślij zapytanie</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLOATING CALL BUTTON (mobile only) ===== -->
+  <a href="tel:+48606985006" class="btn-float-call d-flex d-sm-none" aria-label="Zadzwoń">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold" data-i18n="footerName">Natalia Lachowska – Rzeczoznawca Majątkowy</p>
+      <p class="text-secondary small mb-0" data-i18n="footerText">
+        Uprawnienia nr 8068 &nbsp;|&nbsp; Województwo pomorskie i województwa sąsiednie &nbsp;|&nbsp;
+        &copy; <span id="year"></span> Wszelkie prawa zastrzeżone
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      pl: {
+        pageTitle: 'Natalia Lachowska – Rzeczoznawca Majątkowy',
+        navHome: 'Start', navAbout: 'O mnie', navServices: 'Usługi', navPricing: 'Cennik', navContact: 'Kontakt', navCta: 'Zapytaj o wycenę',
+        heroKicker: 'RZECZOZNAWCA MAJĄTKOWY &nbsp;·&nbsp; WOJEWÓDZTWO POMORSKIE',
+        heroLead: 'Profesjonalna wycena nieruchomości',
+        heroLicense: 'Uprawnienia zawodowe nr &nbsp;<strong>8068</strong> &nbsp;nadane przez Ministra Rozwoju i Technologii',
+        heroContact: 'Skontaktuj się', heroServices: 'Zakres usług',
+        aboutLabel: 'O mnie', aboutTitle: 'Rzetelna wycena nieruchomości',
+        aboutText1: 'Nazywam się Natalia Lachowska i jestem rzeczoznawcą majątkowym z uprawnieniami państwowymi nr <strong>8068</strong>, nadanymi przez Ministra Rozwoju i Technologii. Łączę ścisłą wiedzę inżynieryjną, zdobytą na Politechnice Gdańskiej, ze specjalistyczną praktyką z zakresu rynku nieruchomości.',
+        aboutText2: 'Zapewniam kompleksową obsługę wycen majątkowych dla osób prywatnych, przedsiębiorstw oraz instytucji. Każde zlecenie traktuję indywidualnie, gwarantując najwyższą staranność, pełną niezależność oraz terminowe wykonanie operatu szacunkowego. Ukończyłam liczne szkolenia, w tym szkolenie bankowe organizowane przez Związek Banków Polskich.',
+        qualification1: 'Państwowe uprawnienia zawodowe nr 8068, nadane przez Ministra Rozwoju i Technologii', qualification2: 'Magister inżynier energetyki – Politechnika Gdańska', qualification3: 'Specjalistyczne studia w zakresie wyceny nieruchomości – Politechnika Gdańska',
+        servicesLabel: 'Usługi', servicesTitle: 'Zakres wycen', servicesIntro: 'Sporządzam operaty szacunkowe dla różnych celów i typów nieruchomości',
+        service1Title: 'Nieruchomości mieszkalne', service1Text: 'Domy, mieszkania, lokale użytkowe – wyceny na potrzeby kredytu, sprzedaży, darowizny, podziału majątku.',
+        service2Title: 'Nieruchomości komercyjne', service2Text: 'Biura, obiekty handlowe, hotele, nieruchomości przemysłowe i magazynowe.',
+        service3Title: 'Grunty i działki', service3Text: 'Grunty rolne, budowlane, leśne. Wyceny na potrzeby odszkodowań, wywłaszczeń i scalania gruntów.',
+        service5Title: 'Mienie komunalne', service5Text: 'Wyceny mienia publicznego dla gmin, powiatów i Skarbu Państwa.',
+        service6Title: 'Aktualizacja opłat', service6Text: 'Aktualizacja opłat z tytułu użytkowania wieczystego, wyceny dla celów podatkowych.',
+        pricingLabel: 'Wycena usługi', pricingTitle: 'Indywidualna oferta, jasne zasady', pricingText: 'Koszt przygotowania operatu szacunkowego ustalam indywidualnie dla każdego zlecenia. Cena zależy od rodzaju nieruchomości, stopnia skomplikowania jej stanu prawnego i technicznego, nakładu pracy oraz celu wyceny. Przed rozpoczęciem współpracy zawsze przedstawiam jasną i wiążącą ofertę.',
+        valuesLabel: 'DLACZEGO WARTO', valuesTitle: 'Wiedza, rzetelność i indywidualne podejście', valuesIntro: 'Każdą wycenę przygotowuję z dbałością o szczegóły, jasną komunikację i potrzeby konkretnego klienta.',
+        value1Title: 'Ekspercka wiedza', value1Text: 'Wykształcenie techniczne i specjalistyczne przygotowanie w zakresie wyceny nieruchomości.', value2Title: 'Rzetelność', value2Text: 'Przejrzyste zasady współpracy i odpowiedzialność zawodowa.', value3Title: 'Terminowość', value3Text: 'Sprawna realizacja zleceń i stały kontakt na każdym etapie.', value4Title: 'Zaufanie', value4Text: 'Indywidualne podejście do klientów indywidualnych i firm.',
+        contactLabel: 'Kontakt', contactTitle: 'Skontaktuj się ze mną', contactIntro: 'Zapraszam do współpracy na terenie województwa pomorskiego i województw ościennych.',
+        phoneLabel: 'Telefon', emailLabel: 'E-mail', areaLabel: 'Obszar działania', areaText: 'Województwo pomorskie<br/>i województwa sąsiednie', hoursLabel: 'Godziny pracy', hoursText: 'Poniedziałek – piątek<br/>9:00 – 17:00', googleReviews: 'Zobacz wizytówkę i opinie w Google Maps',
+        formTitle: 'Wyślij wiadomość', nameLabel: 'Imię i nazwisko', namePlaceholder: 'Imię i nazwisko', emailAddressLabel: 'Adres e-mail', emailPlaceholder: 'twoj@email.pl', messageLabel: 'Wiadomość', messagePlaceholder: 'Opisz krótko, czego dotyczy wycena...', formButton: 'Wyślij zapytanie',
+        footerName: 'Natalia Lachowska – Rzeczoznawca Majątkowy', footerText: 'Uprawnienia nr 8068 &nbsp;|&nbsp; Województwo pomorskie i województwa sąsiednie &nbsp;|&nbsp; &copy; <span id="year"></span> Wszelkie prawa zastrzeżone'
+      },
+      en: {
+        pageTitle: 'Natalia Lachowska – Property Valuer',
+        navHome: 'Home', navAbout: 'About me', navServices: 'Services', navPricing: 'Pricing', navContact: 'Contact', navCta: 'Request a valuation',
+        heroKicker: 'PROPERTY VALUER &nbsp;·&nbsp; POMERANIAN VOIVODESHIP', heroLead: 'Professional property valuation',
+        heroLicense: 'Professional licence no. &nbsp;<strong>8068</strong> &nbsp;issued by the Minister of Development and Technology',
+        heroContact: 'Contact me', heroServices: 'Our services', aboutLabel: 'About me', aboutTitle: 'Reliable property valuation',
+        aboutText1: 'My name is Natalia Lachowska, and I am a property valuer holding state professional licence no. <strong>8068</strong>, granted by the Minister of Development and Technology. I combine a strong engineering background from Gdańsk University of Technology with specialist experience in the real estate market.',
+        aboutText2: 'I provide comprehensive valuation services for private individuals, businesses and institutions. I approach every assignment individually, ensuring meticulous care, full independence and timely delivery of the valuation report. I have completed numerous training courses, including banking training organized by the Polish Bank Association.',
+        qualification1: 'State professional licence no. 8068, granted by the Minister of Development and Technology', qualification2: 'Master of Engineering in Energy Engineering – Gdańsk University of Technology', qualification3: 'Specialist studies in property valuation – Gdańsk University of Technology',
+        servicesLabel: 'Services', servicesTitle: 'Valuation services', servicesIntro: 'I prepare valuation reports for a variety of purposes and property types',
+        service1Title: 'Residential properties', service1Text: 'Houses, apartments and commercial premises – valuations for loans, sales, donations and asset division.',
+        service2Title: 'Commercial properties', service2Text: 'Offices, retail facilities, hotels, industrial properties and warehouses.',
+        service3Title: 'Land and plots', service3Text: 'Agricultural, building and forest land. Valuations for compensation, expropriation and land consolidation.',
+        service5Title: 'Municipal property', service5Text: 'Valuations of public property for municipalities, counties and the State Treasury.',
+        service6Title: 'Fee updates', service6Text: 'Updates of perpetual usufruct fees and valuations for tax purposes.',
+        pricingLabel: 'Service pricing', pricingTitle: 'Individual quotes, clear terms', pricingText: 'The cost of preparing a valuation report is determined individually for each assignment. The price depends on the property type, the complexity of its legal and technical status, the work involved and the purpose of the valuation. I always provide a clear, binding quote before work begins.',
+        valuesLabel: 'WHY CHOOSE ME', valuesTitle: 'Knowledge, reliability and an individual approach', valuesIntro: 'Every valuation is prepared with attention to detail, clear communication and the individual needs of each client.',
+        value1Title: 'Expert knowledge', value1Text: 'Technical education and specialist training in property valuation.', value2Title: 'Reliability', value2Text: 'Transparent cooperation and professional responsibility.', value3Title: 'Timeliness', value3Text: 'Efficient delivery and direct contact at every stage.', value4Title: 'Trust', value4Text: 'An individual approach to private and business clients.',
+        contactLabel: 'Contact', contactTitle: 'Get in touch', contactIntro: 'I welcome enquiries from the Pomeranian Voivodeship and neighboring regions.',
+        phoneLabel: 'Telephone', emailLabel: 'E-mail', areaLabel: 'Service area', areaText: 'Pomeranian Voivodeship<br/>and neighboring regions', hoursLabel: 'Opening hours', hoursText: 'Monday – Friday<br/>9:00 – 17:00', googleReviews: 'View Google Maps listing and reviews',
+        formTitle: 'Send a message', nameLabel: 'Name and surname', namePlaceholder: 'Name and surname', emailAddressLabel: 'E-mail address', emailPlaceholder: 'your@email.com', messageLabel: 'Message', messagePlaceholder: 'Briefly describe what the valuation concerns...', formButton: 'Send enquiry',
+        footerName: 'Natalia Lachowska – Property Valuer', footerText: 'Professional licence no. 8068 &nbsp;|&nbsp; Pomeranian Voivodeship and neighboring regions &nbsp;|&nbsp; &copy; <span id="year"></span> All rights reserved'
+      }
+    };
+
+    function setLanguage(language) {
+      const copy = translations[language];
+      document.documentElement.lang = language;
+      document.title = copy.pageTitle;
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        element.innerHTML = copy[element.dataset.i18n];
+      });
+      document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+        element.placeholder = copy[element.dataset.i18nPlaceholder];
+      });
+      document.querySelectorAll('.language-button').forEach((button) => {
+        button.classList.toggle('active', button.dataset.language === language);
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+      localStorage.setItem('preferredLanguage', language);
+    }
+
+    document.querySelectorAll('.language-button').forEach((button) => {
+      button.addEventListener('click', () => setLanguage(button.dataset.language));
+    });
+    setLanguage(localStorage.getItem('preferredLanguage') || 'pl');
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

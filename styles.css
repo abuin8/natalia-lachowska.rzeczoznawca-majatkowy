@@ -1,0 +1,298 @@
+/* ===== GLOBAL ===== */
+:root {
+  --accent: #d5aa58;
+  --dark:   #102b40;
+  --ink:    #17364d;
+  --soft:   #f3f6f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #333;
+  background: var(--soft);
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 10;
+  padding: 1.35rem 0;
+  color: #fff;
+}
+
+.brand {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.brand span,
+.hero-kicker,
+.section-kicker { color: var(--accent); }
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: rgba(255,255,255,.78);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s;
+}
+
+.main-nav a:hover { color: #fff; }
+
+.nav-cta {
+  border: 1px solid rgba(213,170,88,.8);
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  padding: .7rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.language-switcher {
+  align-items: center;
+  display: flex;
+  gap: .25rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.language-switcher > span { color: rgba(255,255,255,.45); }
+
+.language-button {
+  background: transparent;
+  border: 0;
+  color: rgba(255,255,255,.55);
+  cursor: pointer;
+  font-size: .72rem;
+  font-weight: 800;
+  padding: .2rem;
+}
+
+.language-button.active,
+.language-button:hover { color: var(--accent); }
+
+.language-button:focus-visible,
+.main-nav a:focus-visible,
+.nav-cta:focus-visible,
+.brand:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* ===== HERO ===== */
+#hero {
+  min-height: 680px;
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=1000&fit=crop');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(16,43,64,.96) 15%, rgba(16,43,64,.72) 70%, rgba(16,43,64,.4) 100%);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-content {
+  animation: fadeUp 0.9s ease both;
+  padding-top: 5rem;
+}
+
+.hero-kicker,
+.section-kicker {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+}
+
+.hero-avatar {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+.hero-content h1 { letter-spacing: -.03em; }
+
+.section-kicker { display: inline-block; margin-bottom: .8rem; }
+
+/* ===== BADGE ===== */
+.badge.bg-warning {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4em 0.85em;
+}
+
+.text-warning {
+  color: var(--accent) !important;
+}
+
+/* ===== CARDS ===== */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 2px !important;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12) !important;
+}
+
+/* ===== BUTTONS ===== */
+.btn-warning {
+  color: var(--dark);
+  border: 0;
+  border-radius: 0;
+  font-weight: 700;
+}
+
+.btn-warning:hover {
+  background-color: #d49e00;
+  border-color: #d49e00;
+  color: #fff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--dark) !important;
+}
+
+/* ===== VALUES ===== */
+.values-section { background: #fff; }
+
+.value-item {
+  border-top: 2px solid var(--accent);
+  height: 100%;
+  padding: 1.2rem .2rem 0;
+}
+
+.value-item > span {
+  color: #a4b1ba;
+  float: right;
+  font-size: .75rem;
+  font-weight: 800;
+}
+
+.value-item i {
+  color: var(--accent);
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.value-item h5 { color: var(--ink); font-weight: 700; }
+.value-item p { color: #6d7b84; font-size: .9rem; line-height: 1.6; }
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== FLOATING CALL BUTTON ===== */
+.btn-float-call {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: var(--dark);
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-float-call:hover,
+.btn-float-call:focus {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+  color: var(--dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* ===== RESPONSIVE — tablet (≤768px) ===== */
+@media (max-width: 768px) {
+  .card:hover {
+    transform: none; /* wyłącz hover-lift na dotyk */
+  }
+}
+
+/* ===== RESPONSIVE — mobile (≤576px) ===== */
+@media (max-width: 576px) {
+  /* Hero */
+  #hero {
+    background-attachment: scroll; /* fix iOS Safari parallax */
+  }
+  .hero-content { padding: 0 1rem; }
+  .site-header { padding: 1rem 0; }
+  .main-nav { display: none; }
+  .language-switcher { margin-right: .5rem; }
+  .nav-cta { font-size: .63rem; padding: .55rem .65rem; }
+  .hero-kicker { font-size: .58rem; letter-spacing: .1em; }
+  #hero h1    { font-size: 1.9rem; }
+  #hero .lead { font-size: 1rem; }
+  .hero-avatar { width: 150px; height: 150px; }
+
+  /* Sekcje */
+  #o-mnie, #uslugi, #kontakt { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+  /* Karty usług — mniejsza czcionka */
+  #uslugi .card h5   { font-size: 0.85rem; }
+  #uslugi .card .small { font-size: 0.75rem; }
+
+  /* Formularz — iOS nie powiększa pola gdy font >= 16px */
+  .form-control,
+  .form-select {
+    font-size: 16px;
+  }
+
+  /* Przyciski — wygodny tap target */
+  .btn-lg {
+    min-height: 48px;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Kontakt karty — pełna szerokość */
+  #kontakt .col-sm-6 { flex: 0 0 100%; max-width: 100%; }
+}
